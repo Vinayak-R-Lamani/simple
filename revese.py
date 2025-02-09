@@ -6,5 +6,6 @@ def reverse_array(arr:list):
         i += 1
         j -= 1
     return arr
-arr = [1,2,3,4,5] 
-print(reverse_array(arr))
+if __name__ == "__main__":
+    arr = [1,2,3,4,5] 
+    print(reverse_array(arr))
