@@ -1,8 +1,10 @@
-from collections import Counter 
-
-arr = [1, 2, 3, 2, 4, 3, 1, 2]
-# fre_cnt = Counter(arr)
-# sorted_arr = sorted(arr, key = lambda x: (-fre_cnt[x], arr.index(x)))
-# print(sorted_arr)
-sorted_arr = sorted(arr, key = lambda x:x > 2)
-print(sorted_arr)
+n = 5
+ans = n * n
+lst = [int(x)  for x in str(ans)]
+ans_ = 0
+j = 1
+for i in range(0 , len(str(n)) ):
+    ans_ += lst[len(lst) - i - 1] * j
+    j *= 10
+    
+print('Automorphic number') if ans_ == n else print('not')
