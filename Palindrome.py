@@ -8,6 +8,7 @@ def is_Palindrome(string:str):
     return True
 
 
+
 if __name__ == "__main__":
     string = "ABCDCBA"
     if is_Palindrome(string):

@@ -9,5 +9,7 @@ def reverse_array(arr:list):
    
 if __name__ == "__main__":
     arr = [1,2,3,4,5] 
-    ans = reverse_array(arr)
-    print(ans)
+    # arr = sorted(arr,reverse=True)
+    arr = list(reversed(arr))
+    # ans = reverse_array(arr)
+    print(arr)
